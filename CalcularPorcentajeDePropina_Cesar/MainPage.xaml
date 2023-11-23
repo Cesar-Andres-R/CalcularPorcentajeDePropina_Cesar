@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcularPorcentajeDePropina_Cesar.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Monto total de la cuenta"/>
+        <Entry Placeholder="monto" x:Name="monto" Keyboard="Numeric"/>
+
+        <Label Text="Pocentaje de propina"/>
+        <Entry Placeholder="porcentaje" x:Name="porcentaje" Keyboard="Numeric"/>
+
+        <Label Text="Personas que comparten cuenta"/>
+        <Entry Placeholder="compartenCuenta" x:Name="compartenCuenta" Keyboard="Numeric"/>
+
+        
+        <Entry Placeholder="Respuesta" x:Name="Respuesta" Keyboard="Numeric" IsVisible="false"/>
+
+        <Button Text="Calcular" Clicked="Calcular"/>
+
+        <Image Source="/Resources/drawable/feliz.png" IsVisible="false" x:Name="Feliz"/>
+        <Image Source="/Resources/drawable/triste.png" IsVisible="false" x:Name="Triste"/>
+        
+    </StackLayout>
+
+</ContentPage>
